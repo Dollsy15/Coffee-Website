@@ -164,6 +164,24 @@ header .navbar{
     margin-right: 30px;
 }
 
+.about-section{
+    padding: 12px 0;
+    background: var(--light-pink-color);
+}
+
+.about-section .section-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-section .about-image-wrapper .about-image{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: var(--border-radius-circle);
+}
+
 @media screen and (max-width: 900px) {
     .navbar .nav-menu {
         display: none;
