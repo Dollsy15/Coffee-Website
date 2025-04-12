@@ -188,6 +188,16 @@ header .navbar{
         background: var(--white-color);
     }
 
+    body.show-mobile-menu .navbar #menu-close-button {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: var(--dark-color);
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
     .navbar .nav-menu .nav-link {
         color: var(--dark-color);
         display: block;
