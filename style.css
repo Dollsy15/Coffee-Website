@@ -229,6 +229,15 @@ header .navbar{
     .hero-section .hero-details :is(.subtitle, .desc){
         max-width: 100%;
     }
+
+    .hero-section .hero-details .buttons{
+        justify-content: center;
+    }
+
+    .hero-section .hero-details .hero-image-wrapper{
+        max-width: 270px;
+        margin-right: 0;
+    }
 }
 
 @media screen and (min-width: 901px){
