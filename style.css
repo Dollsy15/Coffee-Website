@@ -72,6 +72,11 @@ header .navbar{
     padding: 20px;
 }
 
+.navbar .nav-logo{
+    display: flex;
+    align-items: center;
+}
+
 .navbar .nav-logo .logo-text{
     color: var(--white-color);
     font-size: var(--font-size-xl);
@@ -81,6 +86,7 @@ header .navbar{
 .navbar .nav-menu{
     display: flex;
     gap: 10px;
+    align-items: center;
 }
 
 .navbar .nav-menu .nav-link{
@@ -96,8 +102,19 @@ header .navbar{
     background: var(--secondary-color);
 }
 
-.navbar :where(#menu-close-button, #menu-open-button){
+.navbar .nav-menu button{
+    font-size: 1.5rem;
+    background: none;
+    color: var(--white-color);
+    border: none;
+}
+
+.navbar .nav-menu button#menu-close-button{
     display: none;
+}
+
+.navbar .nav-menu button#menu-open-button{
+    display: block;
 }
 
 .hero-section{
@@ -166,49 +183,38 @@ header .navbar{
 
 @media screen and (max-width: 900px){
     :root{
-    --font-size-m: 1rem;
-    --font-size-l: 1.3rem;
-    --font-size-xl: 1.5rem;
-    --font-size-xxl: 1.8rem;
+        --font-size-m: 1rem;
+        --font-size-l: 1.3rem;
+        --font-size-xl: 1.5rem;
+        --font-size-xxl: 1.8rem;
     }
 
-    .navbar .nav-menu:nth-of-type(2){
+    .navbar .nav-menu{
+        flex-direction: column;
+        align-items: center;
         position: fixed;
         left: -300px;
         top: 0;
         width: 300px;
         height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 100px;
         background: var(--white-color);
-        transition: left 0.2s ease;
+        transition: left 0.3s ease;
     }
 
-    body.show-mobile-menu .navbar .nav-menu:nth-of-type(2){
+    .navbar.show-mobile-menu .nav-menu{
         left: 0;
+    }
+
+    .navbar .nav-menu button#menu-close-button{
+        display: block;
+    }
+
+    .navbar .nav-menu button#menu-open-button{
+        display: none;
     }
 
     .navbar :where(#menu-close-button, #menu-open-button){
         display: block;
-        font-size: var(--font-size-l);
-    }
-
-    .navbar #menu-close-button{
-        position: absolute;
-        right: 30px;
-        top: 30px;
-    }
-
-    .navbar #menu-open-button{
-        color: var(--white-color);
-    }
-
-    .navbar .nav-menu .nav-link{
-        color: var(--dark-color);
-        display: block;
-        margin-top: 17px;
         font-size: var(--font-size-l);
     }
 }
