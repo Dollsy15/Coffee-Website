@@ -192,6 +192,7 @@ header .navbar{
         display: block;
         margin-top: 10px;
         font-size: var(--font-size-s);
+        text-align: center;
     }
 }
 
