@@ -42,12 +42,33 @@ a{
     text-decoration: none;
 }
 
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+img{
+    width: 100%;
+}
+
 header{
     background: var(--primary-color);
 }
 
+header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .navbar .nav-logo .logo-text{
     color: var(--white-color);
+}
+
+.navbar .nav-menu{
+    display: flex;
+    gap: 10px;
 }
 
 .navbar .nav-menu .nav-link{
