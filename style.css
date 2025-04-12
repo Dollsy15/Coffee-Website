@@ -172,8 +172,7 @@ header .navbar{
     --font-size-xxl: 1.8rem;
     }
 
-    .navbar .nav-menu{
-        display: block;
+    .navbar .nav-menu:nth-of-type(2){
         position: fixed;
         left: -300px;
         top: 0;
@@ -187,7 +186,7 @@ header .navbar{
         transition: left 0.2s ease;
     }
 
-    body.show-mobile-menu .navbar .nav-menu{
+    body.show-mobile-menu .navbar .nav-menu:nth-of-type(2){
         left: 0;
     }
 
