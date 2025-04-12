@@ -314,7 +314,7 @@ header .navbar{
     .about-section .about-image-wrapper .about-image{
         width: 100%;
         height: 100%;
-        max-width: 250px;
+        /* max-width: 250px; */
         aspect-ratio: 1;
     }
 }
