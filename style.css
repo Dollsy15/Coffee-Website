@@ -166,15 +166,12 @@ header .navbar{
 
 @media screen and (max-width: 900px){
     .navbar .nav-menu{
-        display: none;
-    }
-
-    .navbar :where(#menu-close-button, #menu-open-button){
-        display: block;
+        display: none; 
     }
 
     .navbar #menu-open-button{
-        color: var(--white-color);
+        display: block; 
+        color: var(--white-color); /* Ensure it's visible */
     }
 
     body.show-mobile-menu .navbar .nav-menu{
