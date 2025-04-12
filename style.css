@@ -179,22 +179,22 @@ header .navbar{
         position: fixed;
         left: 0;
         top: 0;
-        width: 250px; /* Adjust width as per your need */
+        width: 250px;
         height: 100%;
         flex-direction: column;
         align-items: flex-start;
-        padding-top: 100px;
+        padding-top: 60px;
         background: var(--white-color);
-        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3); /* Optional shadow effect */
     }
 
     .navbar .nav-menu .nav-link {
         color: var(--dark-color);
         display: block;
-        margin-top: 17px;
-        font-size: var(--font-size-l);
+        margin-top: 10px;
+        font-size: var(--font-size-s);
     }
 }
+
 
 @media screen and (min-width: 901px){
     .navbar .nav-menu{
