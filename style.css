@@ -197,3 +197,13 @@ header .navbar{
         font-size: var(--font-size-l);
     }
 }
+
+@media screen and (min-width: 901px){
+    .navbar .nav-menu{
+        display: flex;
+    }
+
+    .navbar :where(#menu-close-button, #menu-open-button){
+        display: none;
+    }
+}
