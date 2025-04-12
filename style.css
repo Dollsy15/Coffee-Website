@@ -188,6 +188,17 @@ header .navbar{
         background: var(--white-color);
     }
 
+    body.show-mobile-menu header::before{
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(5px);
+        background: rgba(0, 0, 0, 0.2);
+    }
+
     body.show-mobile-menu .navbar #menu-close-button {
         display: block;
         position: absolute;
