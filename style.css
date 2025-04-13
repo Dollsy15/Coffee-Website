@@ -424,6 +424,10 @@ header .navbar{
     border: 1px solid var(--medium-gray-color);
 }
 
+.contact-section .contact-form{
+    max-width: 50%;
+}
+
 .contact-section .contact-form .form-input:focus{
     border-color: var(--secondary-color);
 
@@ -433,6 +437,23 @@ header .navbar{
     height: 100px;
     padding: 12px;
     resize: vertical;
+}
+
+.contact-section .contact-form .submit-button{
+    padding: 10px 26px;
+    margin-top: 10px;
+    color: var(--white-color);
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-medium);
+    background: var(--primary-color);
+    border-radius: var(--border-radius-m);
+    border: 1px solid var(--primary-color);
+    transition: 0.3s ease;
+}
+
+.contact-section .contact-form .submit-button:hover{
+    color: var(--primary-color);
+    background: transparent;
 }
 
 @media screen and(max-width: 1024px) {
@@ -507,7 +528,7 @@ header .navbar{
         justify-content: center;
     }
 
-    .hero-section .hero-details :is(.subtitle, .desc), .about-section .about-details{
+    .hero-section .hero-details :is(.subtitle, .desc), .about-section .about-details, .contact-section .contact-form{
         max-width: 100%;
     }
 
@@ -549,6 +570,11 @@ header .navbar{
 
     .gallery-section .gallery-list .gallery-item{
         width: calc(100% / 2 - 30px);
+    }
+
+    .contact-section .section-content{
+        align-items: center;
+        flex-direction: column-reverse;
     }
 }
 
