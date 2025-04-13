@@ -323,6 +323,7 @@ header .navbar{
 
 .testimonials-section .testimonial{
     display: flex;
+    user-select: none;
     padding: 35px;
     text-align: center;
     flex-direction: column;
