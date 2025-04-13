@@ -36,6 +36,11 @@
 
 html{
     scroll-behavior: smooth;
+    scroll-padding-top: 70px; 
+}
+
+body {
+    margin-top: 0;
 }
 
 ul{
@@ -74,6 +79,18 @@ header .navbar{
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+}
+
+#about {
+    padding-top: 60px; 
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: var(--primary-color);
 }
 
 .navbar .nav-logo .logo-text{
