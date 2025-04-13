@@ -1,4 +1,4 @@
-const navLinks = document.getElementById(".nav-menu .nav-link")
+const navLinks = document.querySelectorAll(".nav-menu .nav-link");
 const menuOpenButton = document.getElementById("menu-open-button");
 const menuCloseButton = document.getElementById("menu-close-button");
 const body = document.body;
@@ -12,7 +12,9 @@ menuCloseButton.addEventListener("click", () => {
 });
 
 navLinks.forEach(link => {
-    link.addEventListener("click", () => menuOpenButton.click())
+  link.addEventListener("click", () => {
+    body.classList.remove("show-mobile-menu");
+  });
 });
 
 const swiper = new Swiper(".slider-wrapper", {
@@ -44,5 +46,4 @@ const swiper = new Swiper(".slider-wrapper", {
         slidesPerView: 3
     }
   }
-
 });
