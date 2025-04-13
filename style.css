@@ -597,6 +597,11 @@ header .navbar{
         margin-right: 0;
     }
 
+    .about-section .section-content{
+        gap: 70px;
+        flex-direction: column-reverse;
+    }
+
     .about-section .about-details{
         flex-direction: column;
         gap: 70px;
