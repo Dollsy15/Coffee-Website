@@ -183,7 +183,7 @@ header .navbar{
     border-radius: var(--border-radius-circle);
 }
 
-.section-title, .menu-title, .testimonials-title, .gallery-title{
+.section-title, .menu-title, .testimonials-title, .gallery-title, .contact-title{
     text-align: center;
     padding: 60px 0 100px;
     text-transform: uppercase;
@@ -230,7 +230,7 @@ header .navbar{
     background: var(--secondary-color);
 }
 
-/* .contact-title::after{
+.contact-title::after{
     content: "";
     width: 80px;
     height: 5px;
@@ -238,7 +238,7 @@ header .navbar{
     margin: 10px auto 0;
     border-radius: var(--border-radius-s);
     background: var(--secondary-color);
-} */
+}
 
 .about-section .about-details{
     max-width: 50%;
@@ -388,6 +388,29 @@ header .navbar{
 
 .gallery-section .gallery-item:hover .gallery-image{
     transform: scale(1.3);
+}
+
+.contact-section{
+    padding: 50px 0 100px;
+    background: var(--light-pink-color);
+}
+
+.contact-section .section-content{
+    display: flex;
+    gap: 48px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.contact-section .contact-info-list .contact-info{
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    align-items: center;
+}
+
+.contact-section .contact-info-list .contact-info i{
+    
 }
 
 @media screen and(max-width: 1024px) {
