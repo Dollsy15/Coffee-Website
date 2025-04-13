@@ -183,7 +183,7 @@ header .navbar{
     border-radius: var(--border-radius-circle);
 }
 
-.section-title, .menu-title, .testimonials-title{
+.section-title, .menu-title, .testimonials-title, .gallery-title, .contact-title{
     text-align: center;
     padding: 60px 0 100px;
     text-transform: uppercase;
@@ -211,6 +211,26 @@ header .navbar{
 }
 
 .testimonials-title::after{
+    content: "";
+    width: 80px;
+    height: 5px;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: var(--border-radius-s);
+    background: var(--secondary-color);
+}
+
+.gallery-title::after{
+    content: "";
+    width: 80px;
+    height: 5px;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: var(--border-radius-s);
+    background: var(--secondary-color);
+}
+
+.contact-title::after{
     content: "";
     width: 80px;
     height: 5px;
