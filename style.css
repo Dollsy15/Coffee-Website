@@ -183,7 +183,7 @@ header .navbar{
     border-radius: var(--border-radius-circle);
 }
 
-.section-title, .menu-title, .testomonials-title{
+.section-title, .menu-title, .testimonials-title{
     text-align: center;
     padding: 60px 0 100px;
     text-transform: uppercase;
@@ -312,13 +312,20 @@ header .navbar{
     border-radius: var(--border-radius-circle);
 }
 
-.testomonials-section .testomonial .name{
+.testimonials-section .testimonial .name{
     margin-bottom: 16px;
     font-size: var(--font-size-m);
 }
 
-.testomonials-section .testomonial .feedback{
+.testimonials-section .testimonial .feedback{
     line-height: 25px;
+}
+
+.testimonials-section .swiper-pagination-bullet{
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+    background: var(--secondary-color);
 }
 
 @media screen and(max-width: 1024px) {
