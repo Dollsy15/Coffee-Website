@@ -498,6 +498,10 @@ header .navbar{
         max-width: 200px;
     }
 
+    .gallery-section .gallery-list{
+        gap: 30px;
+    }
+
     .gallery-section .gallery-list .gallery-item{
         width: calc(100% / 2 - 30px);
     }
