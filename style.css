@@ -183,7 +183,7 @@ header .navbar{
     border-radius: var(--border-radius-circle);
 }
 
-.section-title, .menu-title{
+.section-title, .menu-title, .testomonials-title{
     text-align: center;
     padding: 60px 0 100px;
     text-transform: uppercase;
@@ -201,6 +201,16 @@ header .navbar{
 }
 
 .menu-title::after{
+    content: "";
+    width: 80px;
+    height: 5px;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: var(--border-radius-s);
+    background: var(--secondary-color);
+}
+
+.testimonials-title::after{
     content: "";
     width: 80px;
     height: 5px;
@@ -280,6 +290,8 @@ header .navbar{
 .menu-section .menu-list .menu-item .text{
     font-size: var(--font-size-m);
 }
+
+
 
 @media screen and(max-width: 1024px) {
     .menu-section .menu-list{
