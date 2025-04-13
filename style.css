@@ -183,7 +183,7 @@ header .navbar{
     border-radius: var(--border-radius-circle);
 }
 
-.section-title, .menu-title, .testimonials-title, .gallery-title, .contact-title{
+.section-title, .menu-title, .testimonials-title, .gallery-title{
     text-align: center;
     padding: 60px 0 100px;
     text-transform: uppercase;
@@ -230,7 +230,7 @@ header .navbar{
     background: var(--secondary-color);
 }
 
-.contact-title::after{
+/* .contact-title::after{
     content: "";
     width: 80px;
     height: 5px;
@@ -238,7 +238,7 @@ header .navbar{
     margin: 10px auto 0;
     border-radius: var(--border-radius-s);
     background: var(--secondary-color);
-}
+} */
 
 .about-section .about-details{
     max-width: 50%;
@@ -361,6 +361,32 @@ header .navbar{
 
 .testimonials-section .swiper-slide-button:hover{
     color: var(--primary-color);
+}
+
+.gallery-section{
+    padding: 50px 0 100px;
+}
+
+.gallery-section .gallery-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.gallery-section .gallery-list .gallery-item{
+    overflow: hidden;
+    border-radius: var(--border-radius-s);
+    width: calc(100% / 3 - 32px);
+}
+
+.gallery-section .gallery-item .gallery-image{
+    width: 100%;
+    height: 100%;
+    cursor: zoom-in;
+}
+
+.gallery-section .gallery-item:hover .gallery-image{
+    transform: scale(1.3);
 }
 
 @media screen and(max-width: 1024px) {
