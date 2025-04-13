@@ -1,3 +1,4 @@
+const navLinks = document.getElementById(".nav-menu .nav-link")
 const menuOpenButton = document.getElementById("menu-open-button");
 const menuCloseButton = document.getElementById("menu-close-button");
 const body = document.body;
@@ -8,6 +9,10 @@ menuOpenButton.addEventListener("click", () => {
 
 menuCloseButton.addEventListener("click", () => {
   body.classList.remove("show-mobile-menu");
+});
+
+navLinks.forEach(link => {
+    link.addEventListener("click", () => menuOpenButton.click())
 });
 
 const swiper = new Swiper(".slider-wrapper", {
