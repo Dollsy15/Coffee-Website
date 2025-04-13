@@ -183,7 +183,7 @@ header .navbar{
     border-radius: var(--border-radius-circle);
 }
 
-.section-title{
+.section-title, .menu-title{
     text-align: center;
     padding: 60px 0 100px;
     text-transform: uppercase;
@@ -191,6 +191,16 @@ header .navbar{
 }
 
 .section-title::after{
+    content: "";
+    width: 80px;
+    height: 5px;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: var(--border-radius-s);
+    background: var(--secondary-color);
+}
+
+.menu-title::after{
     content: "";
     width: 80px;
     height: 5px;
